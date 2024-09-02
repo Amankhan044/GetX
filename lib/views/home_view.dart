@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_getx/views/screenone_view.dart';
 import 'package:get/get.dart';
 
 class HomeView extends StatefulWidget {
@@ -61,8 +62,8 @@ class _HomeViewState extends State<HomeView> {
           ),
           Card(
             child: ListTile(
-              title: Text("GetX Dialog Alert"),
-              subtitle: Text("Dialog Alert With GetX"),
+              title: Text("Bottom Sheet GetX"),
+              subtitle: Text("Bottom Sheet with GetX"),
               onTap: () {
                 Get.bottomSheet(
                   Container(
@@ -97,7 +98,16 @@ class _HomeViewState extends State<HomeView> {
                 );
               },
             ),
-          )
+          ),
+          Expanded(
+              child: TextButton(
+                  onPressed: () {
+                    // Navigator.push(context,
+                    //     MaterialPageRoute(builder: (context) => ScreenOne()));
+
+                    Get.to(ScreenOne());
+                  },
+                  child: Text("Go To ScreenOne")))
         ],
       ),
       floatingActionButton: FloatingActionButton(
