@@ -50,6 +50,6 @@ class _ScreenOneState extends State<ScreenTwo> {
         ],
       ),
     );
-    ;
+    
   }
 }

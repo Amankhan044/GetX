@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_getx/views/screen_two.dart';
 import 'package:get/get.dart';
 
 class ScreenOne extends StatefulWidget {

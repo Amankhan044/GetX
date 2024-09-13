@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_getx/examples/counter_example.dart';
+import 'package:flutter_getx/examples/favourite_example.dart';
+import 'package:flutter_getx/examples/slider_example.dart';
+import 'package:flutter_getx/examples/switch_example.dart';
 import 'package:flutter_getx/views/screenone_view.dart';
 import 'package:get/get.dart';
 
@@ -96,6 +100,42 @@ class _HomeViewState extends State<HomeView> {
                     ),
                   ),
                 );
+              },
+            ),
+          ),
+          Card(
+            child: ListTile(
+              title: Text("GetX Counter "),
+              subtitle: Text("Example"),
+              onTap: () {
+                Get.to(CounterExample());
+              },
+            ),
+          ),
+          Card(
+            child: ListTile(
+              title: Text("GetX Slider Example "),
+              subtitle: Text("Go to Slider View"),
+              onTap: () {
+                Get.to(SliderExample());
+              },
+            ),
+          ),
+          Card(
+            child: ListTile(
+              title: Text("GetX Switch Example "),
+              subtitle: Text("Go to Switch View"),
+              onTap: () {
+                Get.to(() => SwitchExample());
+              },
+            ),
+          ),
+          Card(
+            child: ListTile(
+              title: Text("GetX Favourite Example "),
+              subtitle: Text("Go to Favourite View"),
+              onTap: () {
+                Get.to(() => FavouriteExample());
               },
             ),
           ),
