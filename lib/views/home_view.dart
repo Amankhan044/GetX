@@ -3,6 +3,8 @@ import 'package:flutter_getx/examples/counter_example.dart';
 import 'package:flutter_getx/examples/favourite_example.dart';
 import 'package:flutter_getx/examples/slider_example.dart';
 import 'package:flutter_getx/examples/switch_example.dart';
+import 'package:flutter_getx/views/auth/login_view.dart';
+import 'package:flutter_getx/views/image_picker_view.dart';
 import 'package:flutter_getx/views/screenone_view.dart';
 import 'package:get/get.dart';
 
@@ -136,6 +138,24 @@ class _HomeViewState extends State<HomeView> {
               subtitle: Text("Go to Favourite View"),
               onTap: () {
                 Get.to(() => FavouriteExample());
+              },
+            ),
+          ),
+          Card(
+            child: ListTile(
+              title: Text("GetX Image Picker Example "),
+              subtitle: Text("Go to Image Picker View"),
+              onTap: () {
+                Get.to(() => ImagePicker());
+              },
+            ),
+          ),
+          Card(
+            child: ListTile(
+              title: Text("GetX SignIn Screen "),
+              subtitle: Text("Go to SignIn Screen"),
+              onTap: () {
+                Get.to(() => SignInScreen());
               },
             ),
           ),
