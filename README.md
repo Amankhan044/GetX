@@ -34,3 +34,13 @@ Create a new Project
 - Get height & Get widht 
 - GetX Localization Change the Language of the App i.g Englihs, Urdu, Hindi
 
+
+## GetX State Manamgent with Example
+
+- GetX Counter Example, i.e In this example i created a simple counter app with getx to increment the value of coutner
+- GetX Example Two(Getx Navigation) 
+- Favourite App with GetX 
+- GetX Image Picker 
+- Login(Post,Put, Delete) Api With GetX 
+- Get Api with GetX 
+- Let's learn how to write clearn code using MVVM with GETx and REST APIs
